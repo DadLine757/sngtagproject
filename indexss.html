@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+      body, html {
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #303134;
+        font-family: "Poppins", sans-serif;
+      }
+      .name {
+        color: white;
+        font-size: 22px;
+        margin-top: 40px;
+      }
+      .telega {
+        width: 85%;
+        height: 41px;
+        background-color: #8AB4F8;
+        color: #27272A;
+        text-align: center;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .changesound {
+        width: 85%;
+        height: 41px;
+        background-color: #8AB4F8;
+        color: #27272A;
+        text-align: center;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .using {
+      width: 85%;
+        height: 41px;
+        background-color: #8AB4F8;
+        color: #27272A;
+        text-align: center;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      #chongesound {
+        display: none;
+      }
+      .key {
+        width: 87%;
+        height: 35px;
+        background-color: #27272A;
+        border-radius: 7px;
+        border: 1px solid #3F3F46;
+        margin-top: 26px;
+      }
+      .kinfo {
+        color: #A1A1AA;
+        font-size: 13px;
+        text-align: left;
+        font-weight: 500;
+        position: absolute;
+        top: 42px;
+        left: 22px;
+      }
+      .page {
+        color: white;
+        font-size: 23px;
+        margin-top: 22px;
+       
+      }
+      .auth {
+      width: 40%;
+        height: 39px;
+        background-color: #8AB4F8;
+        color: #27272A;
+        text-align: center;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-left: -5px;
+      }
+            .tohome {
+      width: 40%;
+        height: 39px;
+        background-color: #8AB4F8;
+        color: #27272A;
+        text-align: center;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+         margin-left: 18px;
+      }
+a {
+color: #27272A;
+text-decoration: none;
+}
+    </style>
+    <!--<link rel="stylesheet" href="style.css"/>-->
+    <!--<script defer src="script.js"></script>-->
+  </head>
+  <body>
+    <div id="home">
+    <center>
+    <h2 class="name">
+      Официальный сайт SongTag
+    </h2>
+      <button class="telega" onclick="tg()">
+        Наш Telegram
+      </button>
+      <button class="changesound" onclick="zvuk()">
+        Сменить звук
+      </button>
+      <button class="using">
+        Условия исп.
+      </button>
+</center>
+    </div>
+    
+    <div id="chongesound">
+     <center>
+      <h2 class="page">
+        Авторизация
+       </h2>
+       <h6 class="kinfo">
+         Ключ 
+       </h6>
+       <input type="text" class="key">
+       <button class="auth" onclick="au()">
+         Войти
+       </button>
+       
+       <button class="tohome" onclick="go()">
+         <a href="https://sngtag.yhub.net/index">На главную</a>
+       </button>
+      </center>
+    </div>
+    <script>
+    function zvuk() {
+      var h = document.getElementById("home");
+      var cs = document.getElementById("chongesound");
+      h.style.display = "none";
+      if (home.style.display == "none") {
+        cs.style.display = "block";
+      }
+    }
+      
+      function au() {
+        alert("Invalid key! Get in telegram: @sngtag_mngr")
+      }
+      
+      function go() {
+        window.open("https://sngtag.yhub.net/index")
+      }
+    </script>
+  </body>
+</html>
